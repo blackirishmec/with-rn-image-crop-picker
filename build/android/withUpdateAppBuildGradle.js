@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.setBuildscript = exports.withUpdateAppBuildGradle = void 0;
+exports.withUpdateAppBuildGradle = void 0;
+exports.setBuildscript = setBuildscript;
 const config_plugins_1 = require("@expo/config-plugins");
 const withUpdateAppBuildGradle = (config) => {
     return (0, config_plugins_1.withAppBuildGradle)(config, (config) => {
@@ -22,5 +23,4 @@ function setBuildscript(buildGradle) {
     }
     return newBuildGradle;
 }
-exports.setBuildscript = setBuildscript;
 exports.default = exports.withUpdateAppBuildGradle;
